@@ -171,12 +171,15 @@ console.log(" ")
 console.log("Opdracht 3b");
 
 function highestGrade(arrayNumber){
+    let hoogsteGradeCijfer = 0;
 
     for (let i = 0; i < arrayNumber.length; i++){
-        if (arrayNumber[i] > hoogsteCijfer){
-            hoogsteCijfer = arrayNumber[i];
+        if (arrayNumber[i] > hoogsteGradeCijfer){
+            hoogsteGradeCijfer = arrayNumber[i];
         }
     }
+
+    return hoogsteGradeCijfer
 }
 
 const grade1 = highestGrade(grades);
